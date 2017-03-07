@@ -9,9 +9,7 @@ const { WP_END_POINT, WP_USERNAME, WP_PASSWORD } = process.env;
 const compiledFunction = pug.compileFile('./templates/index.pug', { pretty: true });
 
 const wp = new WPAPI({
-    endpoint: WP_END_POINT,
-    username: WP_USERNAME,
-    password: WP_PASSWORD
+    endpoint: WP_END_POINT
 });
 
 const IMAGE_REGEXP_STRING = '"[-а-яА-Яa-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\\b"';
