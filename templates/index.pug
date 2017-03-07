@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet', href='https://unpkg.com/gutenberg-css@0.4', media='print')
+    link(rel='stylesheet', href='https://unpkg.com/gutenberg-css@0.4/dist/themes/oldstyle.min.css', media='print')
+    link(rel='stylesheet', href='./style.css')
+  body
+    each post in posts
+        div.page-break-before.post
+            div.text
+                p= post.text
+            div.page-break-before.images
+                ul
+                    each image in post.images
+                        li
+                            img(src=image)

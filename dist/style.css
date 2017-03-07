@@ -1,0 +1,29 @@
+body {
+    padding: 10px;
+}
+.text {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.images ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images li{
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+
+}
+.images li img {
+    max-height: 100%;
+    margin: 0 auto;
+}
