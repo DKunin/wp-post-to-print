@@ -7,10 +7,11 @@ html(lang="en")
   body
     each post in posts
         div.page-break-before.post
-            div.text
+            div.page.text
                 p= post.text
-            div.page-break-before.images
-                ul
-                    each image in post.images
-                        li
-                            img(src=image)
+            each imagePage in post.images
+                div.page.page-break-before.images
+                    ul
+                        each image, index in imagePage
+                            li
+                                img(src=image, alt=index)
